@@ -37,16 +37,35 @@ h3 {
 
 }
 
-.bottom-cloud {
-    position: absolute;
-    bottom: 300px;
-    left: 100px;
+.skill-row {
+    line-height: 2;
+    margin: 100px auto;
+    text-align: left;
+    width: 50%;
 }
 
 .top-cloud {
     position: absolute;
     right: 100px;
     top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    left: 100px;
+}
+
+.developer-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.beers-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
 }
 
 a {
