@@ -23,6 +23,15 @@ h1 {
     line-height: 1.5;
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -59,33 +68,20 @@ h1 {
 
 /* Features */
 
-.features-container {
-    padding: 5% 15%;
+#features {
+    padding: 7% 15%;
 }
 
-.feature-container {
-    margin: 5% 0;
+.feature-box {
+    padding: 5%;
     text-align: center;
 }
 
 .feature-icon {
     color: #ef8172;
-    font-size: 4.5rem;
-    margin-bottom: 5%;
+    margin-bottom: 1rem;
 }
 
 .feature-icon:hover {
     color: #ff4c68;
-}
-
-.feature-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 3%;
-}
-
-.feature-paragraph {
-    color: #8f8f8f;
-    margin: 0 auto;
-    width: 60%;
 }
