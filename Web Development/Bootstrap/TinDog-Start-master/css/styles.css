@@ -138,6 +138,30 @@ p {
     padding: 3% 2%;
 }
 
+/* CTA Section */
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#cta .btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* Footer Section */
+
+#footer {
+    margin: 7% 15%;
+    text-align: center;
+}
+
+#footer i {
+    margin: 1%;
+}
+
 @media (max-width: 1028px) {
 
     #title {
