@@ -71,8 +71,7 @@ p {
 .title-image {
     position: absolute;
     transform: rotate(25deg);
-    width: 20%;
-    right: 25%;
+    right: 30%;
 }
 
 /* Features */
@@ -139,3 +138,14 @@ p {
     padding: 3% 2%;
 }
 
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
