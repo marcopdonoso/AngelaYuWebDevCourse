@@ -147,10 +147,6 @@ p {
     text-align: center;
 }
 
-#cta .btn {
-    margin: 5% 3% 5% 0;
-}
-
 /* Footer Section */
 
 #footer {
@@ -159,7 +155,7 @@ p {
 }
 
 #footer i {
-    margin: 1%;
+    margin: 20px 10px;
 }
 
 @media (max-width: 1028px) {
