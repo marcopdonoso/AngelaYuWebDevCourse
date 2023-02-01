@@ -9,7 +9,11 @@
   "author": "Marco Perez Donoso",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "superheroes": "^3.0.0",
     "supervillains": "^3.1.0"
+=======
+    "superheroes": "^3.0.0"
+>>>>>>> dcb3d75d266e8757a6b047a152400475ee0148c8
   }
 }
