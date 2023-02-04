@@ -1,0 +1,14 @@
+{
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "Current Weather Web App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Perez Donoso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
