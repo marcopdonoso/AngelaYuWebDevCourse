@@ -6,6 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 let items = ["Buy Food", "Cook Food", "Eat Food"];
+let workItems = [];
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -23,12 +24,25 @@ app.get("/", function(req, res) {
 
     let today = date.toLocaleDateString("en-US", options);
 
-    res.render("list", {dayOfWeek: today, items: items});
+    res.render("list", {listTitle: today, items: items});
 });
 
 app.post("/", function(req, res) {
-    items.push(req.body.newItem);
-    res.redirect("/");
+    if(req.body.list === "Work") {
+        workItems.push(req.body.newItem);
+        res.redirect("/work");
+    } else {
+        items.push(req.body.newItem);
+        res.redirect("/");
+    }
+});
+
+app.get("/work", function(req, res) {
+    res.render("list", {listTitle: "Work List", items: workItems});
+});
+
+app.get("/about", function(req, res) {
+    res.render("about");
 });
 
 app.listen(PORT, function() {
