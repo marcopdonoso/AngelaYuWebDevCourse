@@ -5,22 +5,22 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-var items = ["Buy Food", "Cook Food", "Eat Food"];
+let items = ["Buy Food", "Cook Food", "Eat Food"];
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-    var date = new Date();
+    let date = new Date();
 
-    var options = {
+    let options = {
         weekday: "long",
         month: "long",
         day: "numeric"
     };
 
-    var today = date.toLocaleDateString("en-US", options);
+    let today = date.toLocaleDateString("en-US", options);
 
     res.render("list", {dayOfWeek: today, items: items});
 });
