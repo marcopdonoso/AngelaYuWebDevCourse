@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const date = require(__dirname + "/date.js");
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-let items = ["Buy Food", "Cook Food", "Eat Food"];
-let workItems = [];
+const items = ["Buy Food", "Cook Food", "Eat Food"];
+const workItems = [];
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -14,17 +15,10 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-    let date = new Date();
 
-    let options = {
-        weekday: "long",
-        month: "long",
-        day: "numeric"
-    };
+    const day = date.getDate();
 
-    let today = date.toLocaleDateString("en-US", options);
-
-    res.render("list", {listTitle: today, items: items});
+    res.render("list", {listTitle: day, items: items});
 });
 
 app.post("/", function(req, res) {
